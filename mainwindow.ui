@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>774</width>
+    <height>291</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTextEdit" name="textEdit"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>774</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menufile">
+    <property name="title">
+     <string>file</string>
+    </property>
+    <addaction name="actionnew"/>
+    <addaction name="actionopen"/>
+    <addaction name="separator"/>
+    <addaction name="actionsave"/>
+    <addaction name="actionsaveAs"/>
+   </widget>
+   <widget class="QMenu" name="menuedit">
+    <property name="title">
+     <string>edit</string>
+    </property>
+    <addaction name="actionsave"/>
+    <addaction name="actioncut"/>
+    <addaction name="actioncopy"/>
+    <addaction name="actionpaste"/>
+    <addaction name="actionundo"/>
+    <addaction name="actionredo"/>
+    <addaction name="actionquit"/>
+    <addaction name="actionprint"/>
+   </widget>
+   <widget class="QMenu" name="menuabout">
+    <property name="title">
+     <string>about</string>
+    </property>
+    <addaction name="actionaboutqt"/>
+   </widget>
+   <widget class="QMenu" name="menufont">
+    <property name="title">
+     <string>font</string>
+    </property>
+    <addaction name="actioncut"/>
+    <addaction name="actionselect_font"/>
+    <addaction name="actionbold"/>
+    <addaction name="actionitalic"/>
+    <addaction name="actionunderline"/>
+    <addaction name="actionselectfont"/>
+    <addaction name="actionfontbackgroundcolour"/>
+    <addaction name="actionfontcolor"/>
+   </widget>
+   <addaction name="menufile"/>
+   <addaction name="menuedit"/>
+   <addaction name="menuabout"/>
+   <addaction name="menufont"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QToolBar" name="toolBar_2">
+   <property name="windowTitle">
+    <string>toolBar_2</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionopen"/>
+   <addaction name="actionnew"/>
+   <addaction name="actionsave"/>
+   <addaction name="actionsaveAs"/>
+   <addaction name="actioncut"/>
+   <addaction name="actioncopy"/>
+   <addaction name="actionpaste"/>
+   <addaction name="actionundo"/>
+   <addaction name="actionredo"/>
+   <addaction name="actionquit"/>
+   <addaction name="actionprint"/>
+   <addaction name="actionbold"/>
+   <addaction name="actionitalic"/>
+   <addaction name="actionunderline"/>
+   <addaction name="actionselectfont"/>
+   <addaction name="actionfontbackgroundcolour"/>
+   <addaction name="actionfontcolor"/>
+  </widget>
+  <action name="actionnew">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/new.jpg</normaloff>:/images/images qt/new.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>new</string>
+   </property>
+  </action>
+  <action name="actionopen">
+   <property name="text">
+    <string>open</string>
+   </property>
+  </action>
+  <action name="actionsave">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/save.png</normaloff>:/images/images qt/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>save</string>
+   </property>
+  </action>
+  <action name="actionsaveAs">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/save.png</normaloff>:/images/images qt/save.png</iconset>
+   </property>
+   <property name="text">
+    <string>saveAs</string>
+   </property>
+  </action>
+  <action name="actioncut">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/cut.webp</normaloff>:/images/images qt/cut.webp</iconset>
+   </property>
+   <property name="text">
+    <string>cut</string>
+   </property>
+  </action>
+  <action name="actioncopy">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/copy.png</normaloff>:/images/images qt/copy.png</iconset>
+   </property>
+   <property name="text">
+    <string>copy</string>
+   </property>
+  </action>
+  <action name="actionpaste">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/paste.jpg</normaloff>:/images/images qt/paste.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>paste</string>
+   </property>
+  </action>
+  <action name="actionundo">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/undo.png</normaloff>:/images/images qt/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>undo</string>
+   </property>
+  </action>
+  <action name="actionredo">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/redo.png</normaloff>:/images/images qt/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>redo</string>
+   </property>
+  </action>
+  <action name="actionquit">
+   <property name="text">
+    <string>quit</string>
+   </property>
+  </action>
+  <action name="actionprint">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/print.png</normaloff>:/images/images qt/print.png</iconset>
+   </property>
+   <property name="text">
+    <string>print</string>
+   </property>
+  </action>
+  <action name="actionaboutqt">
+   <property name="text">
+    <string>aboutqt</string>
+   </property>
+   <property name="toolTip">
+    <string>aboutqt</string>
+   </property>
+  </action>
+  <action name="actionselect_font">
+   <property name="text">
+    <string>select font</string>
+   </property>
+  </action>
+  <action name="actionbold">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/bold.png</normaloff>:/images/images qt/bold.png</iconset>
+   </property>
+   <property name="text">
+    <string>bold</string>
+   </property>
+  </action>
+  <action name="actionitalic">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/italic.png</normaloff>:/images/images qt/italic.png</iconset>
+   </property>
+   <property name="text">
+    <string>italic</string>
+   </property>
+  </action>
+  <action name="actionunderline">
+   <property name="icon">
+    <iconset resource="resourse.qrc">
+     <normaloff>:/images/images qt/underline.png</normaloff>:/images/images qt/underline.png</iconset>
+   </property>
+   <property name="text">
+    <string>underline</string>
+   </property>
+  </action>
+  <action name="actionselectfont">
+   <property name="text">
+    <string>selectfont </string>
+   </property>
+   <property name="toolTip">
+    <string>selectfont </string>
+   </property>
+  </action>
+  <action name="actionfontbackgroundcolour">
+   <property name="text">
+    <string>fontbackgroundcolour</string>
+   </property>
+   <property name="toolTip">
+    <string>fontbackgroundcolour</string>
+   </property>
+  </action>
+  <action name="actionfontcolor">
+   <property name="text">
+    <string>fontcolor</string>
+   </property>
+   <property name="toolTip">
+    <string>fontcolor</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resourse.qrc"/>
+ </resources>
+ <connections/>
+</ui>
